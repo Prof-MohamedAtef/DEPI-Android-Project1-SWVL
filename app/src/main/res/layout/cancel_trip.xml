@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerInParent="true"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/circleImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@color/white"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#EBEBEB"
+                />
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_cancel_trip"
+                android:layout_width="80dp"
+                android:layout_height="80dp">
+
+            </ImageView>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/call_text_margin_top"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:text="@string/cancel_trip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="80dp"-->
+    <!--            android:layout_height="80dp">-->
+    <!--&lt;!&ndash;            <de.hdodenhof.circleimageview.CircleImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:src="@color/white"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="100dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="100dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_centerInParent="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;                />&ndash;&gt;-->
+    <!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_centerInParent="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:src="@drawable/ic_cancel_trip"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="50dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="50dp"/>&ndash;&gt;-->
+    <!--        </RelativeLayout>-->
