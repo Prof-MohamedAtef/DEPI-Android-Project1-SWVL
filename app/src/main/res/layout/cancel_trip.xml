@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,8 +17,8 @@
                 android:layout_centerInParent="true"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/circleImageView"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:src="@color/white"
                 app:civ_border_width="2dp"
@@ -27,8 +28,8 @@
                 android:layout_gravity="center"
                 android:layout_centerInParent="true"
                 android:src="@drawable/ic_cancel_trip"
-                android:layout_width="80dp"
-                android:layout_height="80dp">
+                android:layout_width="60dp"
+                android:layout_height="60dp">
 
             </ImageView>
         </RelativeLayout>
