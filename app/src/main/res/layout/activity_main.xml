@@ -8,57 +8,57 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
-<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--        android:id="@+id/boarding_pass_constraint"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:paddingStart="16dp"-->
-<!--        android:paddingTop="16dp"-->
-<!--        android:paddingEnd="16dp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent">-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/boarding_pass_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-<!--        <ImageView-->
-<!--            android:id="@+id/arrow_back"-->
-<!--            android:layout_width="45dp"-->
-<!--            android:layout_height="45dp"-->
-<!--            android:src="@drawable/ic_arrow_left"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent" />-->
+        <ImageView
+            android:id="@+id/arrow_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_arrow_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/arrow_back"-->
-<!--            app:layout_constraintTop_toTopOf="parent">-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/arrow_back"
+            app:layout_constraintTop_toTopOf="parent">
 
-<!--            <TextView-->
-<!--                android:id="@+id/tv_boarding_num"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="91"-->
-<!--                android:textColor="#000000"-->
-<!--                android:textSize="38sp"-->
-<!--                android:textStyle="bold"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent" />-->
+            <TextView
+                android:id="@+id/tv_boarding_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="91"
+                android:textColor="#000000"
+                android:textSize="38sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/tv_boarding_title"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="BOARDING\nPASS"-->
-<!--                android:textColor="#FFCCC2C2"-->
-<!--                android:textStyle="bold"-->
-<!--                app:layout_constraintBottom_toBottomOf="@+id/tv_boarding_num"-->
-<!--                app:layout_constraintStart_toEndOf="@+id/tv_boarding_num"-->
-<!--                app:layout_constraintTop_toTopOf="@+id/tv_boarding_num" />-->
+            <TextView
+                android:id="@+id/tv_boarding_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BOARDING\nPASS"
+                android:textColor="#FFCCC2C2"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_boarding_num"
+                app:layout_constraintStart_toEndOf="@+id/tv_boarding_num"
+                app:layout_constraintTop_toTopOf="@+id/tv_boarding_num" />
 
-<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
-<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
         android:orientation="vertical"

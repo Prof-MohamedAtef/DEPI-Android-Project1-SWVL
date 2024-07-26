@@ -1,6 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@+id/boarding_pass_layout"
+        layout="@layout/boarding_pass_app_bar"/>
+    <RelativeLayout
+        android:layout_below="@+id/boarding_pass_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue2">
+        <TextView
+            android:id="@+id/tv_user_advice"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="@string/boarding_text" />
+        <RelativeLayout
+            android:layout_below="@+id/tv_user_advice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:background="@drawable/rounded_view">
+            <RelativeLayout
+                android:id="@+id/gray_line_container"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <View
+                    android:id="@+id/gray_view"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="80dp"
+                    android:layout_height="8dp"
+                    android:background="@color/gray"/>
+            </RelativeLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/gray_line_container"
+                android:paddingStart="20dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@color/blue2"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FFFFFF"
+                    android:id="@+id/ic_driver_photo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@color/yellow"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FFFFFF"
+                    app:layout_constraintStart_toEndOf="@+id/ic_driver_photo"
+                    app:layout_constraintEnd_toEndOf="@+id/ic_driver_photo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
 
+            </androidx.constraintlayout.widget.ConstraintLayout>
+                    
+
+
+
+
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
 </RelativeLayout>
