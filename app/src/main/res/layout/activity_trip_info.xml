@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TripInfoActivity">
+
+    <include android:id="@+id/boarding_pass_app_bar_id" layout="@layout/boarding_pass_app_bar"/>
+    <RelativeLayout
+        android:layout_below="@+id/boarding_pass_app_bar_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue2"
+        android:paddingTop="10dp">
+        <TextView
+            android:id="@+id/white_back_id"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/boarding_text"
+            android:textColor="@color/white"/>
+        <RelativeLayout
+            android:layout_below="@+id/white_back_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:background="@drawable/rounded_view">
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="8dp"
+                    android:background="@color/gray"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
