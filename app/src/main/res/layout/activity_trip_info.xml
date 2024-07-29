@@ -22,6 +22,7 @@
             android:text="@string/boarding_text"
             android:textColor="@color/white"/>
         <RelativeLayout
+            android:layout_marginTop="15dp"
             android:layout_below="@+id/white_back_id"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -37,7 +38,44 @@
                     android:layout_height="8dp"
                     android:background="@color/gray"/>
             </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/driver_profile_pic_id"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@color/white"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#000000"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/car_photo_id"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="-10dp"
+                    app:layout_constraintStart_toEndOf="@+id/driver_profile_pic_id"
+                    app:layout_constraintTop_toTopOf="@+id/driver_profile_pic_id"
+                    app:layout_constraintBottom_toBottomOf="@+id/driver_profile_pic_id"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#000000"
+                    android:src="@color/yellow"/>
+                <TextView
+                    android:layout_marginStart="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@+id/car_photo_id"
+                    app:layout_constraintTop_toTopOf="@+id/car_photo_id"
+                    app:layout_constraintBottom_toBottomOf="@+id/car_photo_id"
+                    android:text="Hi, I am Mohamed"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </RelativeLayout>
 
     </RelativeLayout>
