@@ -1,9 +1,12 @@
 package mo.ed.nozha.apps.excercise.intents
 
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -18,6 +21,7 @@ class FirstActivity : AppCompatActivity() {
     lateinit var nameEditText: EditText
     lateinit var ageEditText: EditText
     lateinit var btnSendDate: Button
+    lateinit var mapLauncher: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -28,6 +32,7 @@ class FirstActivity : AppCompatActivity() {
         nameEditText = findViewById(R.id.editText)
         ageEditText = findViewById(R.id.age_editText)
         btnSendDate = findViewById(R.id.btnSendData)
+        mapLauncher = findViewById(R.id.map_launcher)
 
         btnSendDate.setOnClickListener { view ->
             var name = nameEditText.text
@@ -59,5 +64,19 @@ class FirstActivity : AppCompatActivity() {
 
             startActivity(nameIntent)
         }
+
+        mapLauncher.setOnClickListener { view->
+//            31.18739267593117, 29.897400153896665
+            val latitude =  31.18739267593117
+            val longitude = 29.897400153896665
+            val uri = Uri.parse("geo:$latitude,$longitude")
+            val mapIntent = Intent(Intent.ACTION_VIEW, uri)
+            mapIntent.setPackage("com.google.android.apps.maps")
+
+            startActivity(mapIntent)
+
+        }
+
+
     }
 }
