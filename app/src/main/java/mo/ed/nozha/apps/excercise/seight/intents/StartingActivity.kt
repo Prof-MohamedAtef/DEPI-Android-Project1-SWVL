@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import mo.ed.nozha.apps.R
+import mo.ed.nozha.apps.excercise.seight.models.Trip
 
 class StartingActivity : AppCompatActivity() {
     /*
@@ -44,9 +45,15 @@ class StartingActivity : AppCompatActivity() {
             bundle
              */
             val bundle = Bundle()
-            bundle.putString("USER_NAME", username.toString())
-            bundle.putInt("AGE", age.toString().toInt())
-            bundle.putBoolean("IS_YOUNG", true)
+//            bundle.putString("USER_NAME", username.toString())
+//            bundle.putInt("AGE", age.toString().toInt())
+//            bundle.putBoolean("IS_YOUNG", true)
+
+            /*
+            using Serializable
+             */
+            val trip = Trip(8585, "El-Arish", "Cairo")
+            bundle.putSerializable("trip", trip)
             intent.putExtras(bundle)
             startActivity(intent)
         }
