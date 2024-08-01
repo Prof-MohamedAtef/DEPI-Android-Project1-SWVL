@@ -7,6 +7,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".excercise.intents.FirstActivity">
+    <TextView
+        android:id="@+id/tv_age"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="age:"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/age_editText"/>
+    <EditText
+        android:hint="@string/age_edit_text_hint"
+        android:id="@+id/age_editText"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_username"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user name:"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"/>
     <EditText
         android:hint="@string/edit_text_hint"
         android:id="@+id/editText"

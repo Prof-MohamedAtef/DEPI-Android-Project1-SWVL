@@ -4,4 +4,5 @@
     <string name="boarding_text">You will be able to view the ride details and track</string>
     <string name="send_data">Send Data</string>
     <string name="edit_text_hint">Enter your name</string>
+    <string name="age_edit_text_hint">Enter your age</string>
 </resources>
