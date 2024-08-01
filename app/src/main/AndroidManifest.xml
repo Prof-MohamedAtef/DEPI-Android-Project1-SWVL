@@ -16,12 +16,14 @@
         android:theme="@style/Theme.MyNozhaApps"
         tools:targetApi="31">
         <activity
+            android:name=".excercise.seight.intents.EndingActivity"
+            android:exported="false" />
+        <activity
             android:name=".excercise.snine.intents.SecondActivity"
             android:exported="false" />
         <activity
             android:name=".excercise.snine.intents.FirstActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -29,9 +31,7 @@
 
         <activity
             android:name=".features.location.view.location.LocationActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".TripInfoActivity"
             android:exported="false" />
@@ -40,14 +40,13 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
-
-        </activity>
-
-        <activity android:name=".excercise.seight.intents.StartingActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".excercise.seight.intents.StartingActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
