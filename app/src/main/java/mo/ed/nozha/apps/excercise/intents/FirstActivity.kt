@@ -8,6 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import mo.ed.nozha.apps.R
+/*
+Thursday, 1 August, 2024
+ */
 class FirstActivity : AppCompatActivity() {
     lateinit var nameEditText: EditText
     lateinit var btnSendDate: Button
