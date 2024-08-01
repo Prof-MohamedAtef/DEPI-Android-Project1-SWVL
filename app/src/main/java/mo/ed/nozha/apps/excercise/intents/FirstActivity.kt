@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import mo.ed.nozha.apps.R
@@ -22,6 +23,9 @@ class FirstActivity : AppCompatActivity() {
     lateinit var ageEditText: EditText
     lateinit var btnSendDate: Button
     lateinit var mapLauncher: ImageView
+    lateinit var editPhone: EditText
+    lateinit var callLauncher: ConstraintLayout
+    lateinit var smsLauncher: ConstraintLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -33,6 +37,9 @@ class FirstActivity : AppCompatActivity() {
         ageEditText = findViewById(R.id.age_editText)
         btnSendDate = findViewById(R.id.btnSendData)
         mapLauncher = findViewById(R.id.map_launcher)
+        editPhone = findViewById(R.id.editPhone)
+        callLauncher = findViewById(R.id.call_launcher)
+        smsLauncher = findViewById(R.id.sms_launcher)
 
         btnSendDate.setOnClickListener { view ->
             var name = nameEditText.text
@@ -77,6 +84,16 @@ class FirstActivity : AppCompatActivity() {
 
         }
 
+        callLauncher.setOnClickListener { view->
+            var phone = editPhone.text
+            val intent = Intent(Intent.ACTION_DIAL, Uri.fromParts("tel",phone.toString(), null))
+            startActivity(intent)
+        }
 
+        smsLauncher.setOnClickListener { view->
+            var phone = editPhone.text
+            val intent = Intent(Intent.ACTION_VIEW, Uri.fromParts("sms",phone.toString(), null))
+            startActivity(intent)
+        }
     }
 }

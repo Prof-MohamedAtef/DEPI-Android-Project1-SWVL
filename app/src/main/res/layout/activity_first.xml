@@ -14,6 +14,50 @@
         android:src="@drawable/ic_map_launcher"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+        android:id="@+id/editPhone"
+        android:hint="@string/enter_phone_number"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/map_launcher"
+        app:layout_constraintTop_toBottomOf="@id/map_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/call_launcher"
+        android:background="@drawable/phone_background"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/editPhone"
+        app:layout_constraintTop_toBottomOf="@id/editPhone"
+        android:layout_width="60dp"
+        android:layout_height="60dp">
+        <ImageView
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_call_white"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sms_launcher"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/sms_background"
+        app:layout_constraintTop_toTopOf="@+id/call_launcher"
+        app:layout_constraintStart_toEndOf="@id/call_launcher"
+        android:layout_marginStart="20dp">
+        <ImageView
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_sms"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <TextView
         android:id="@+id/tv_age"
         app:layout_constraintStart_toStartOf="@+id/editText"
