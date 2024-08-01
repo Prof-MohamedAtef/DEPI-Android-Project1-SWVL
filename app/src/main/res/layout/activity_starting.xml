@@ -62,4 +62,33 @@
         android:background="@drawable/ic_map_launcher_custom"
         app:layout_constraintTop_toBottomOf="@+id/ageEditText"
         app:layout_constraintStart_toStartOf="@+id/ageEditText"/>
+    <EditText
+        android:id="@+id/friendEditPhone"
+        app:layout_constraintTop_toBottomOf="@+id/mapLauncher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:hint="Enter friend's phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/callIntentLauncher"
+        app:layout_constraintTop_toBottomOf="@id/friendEditPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/call_green_background">
+        <ImageView
+            android:src="@drawable/ic_call_phone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

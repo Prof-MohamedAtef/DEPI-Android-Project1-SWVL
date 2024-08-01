@@ -21,6 +21,8 @@ class StartingActivity : AppCompatActivity() {
     lateinit var btnSendData: Button
     lateinit var ageEditText: EditText
     lateinit var mapLauncher: ConstraintLayout
+    lateinit var callLauncher: ConstraintLayout
+    lateinit var friendEditPhone: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +32,8 @@ class StartingActivity : AppCompatActivity() {
         ageEditText = findViewById(R.id.ageEditText)
         btnSendData = findViewById(R.id.btn_send_data)
         mapLauncher = findViewById(R.id.mapLauncher)
+        callLauncher = findViewById(R.id.callIntentLauncher)
+        friendEditPhone = findViewById(R.id.friendEditPhone)
 
 
         btnSendData.setOnClickListener { view->
@@ -78,7 +82,15 @@ class StartingActivity : AppCompatActivity() {
         }
 
         /*
-
+        phone call implicit intent
          */
+
+        callLauncher.setOnClickListener { view->
+            val phone = friendEditPhone.text
+            val phoneIntent = Intent(Intent.ACTION_DIAL, Uri.fromParts("tel",phone.toString(), null))
+            startActivity(phoneIntent)
+        }
+
+
     }
 }
