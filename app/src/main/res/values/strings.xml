@@ -2,4 +2,6 @@
     <string name="app_name">MyNozhaApps</string>
     <string name="cancel_trip">Cancel Trip?</string>
     <string name="boarding_text">You will be able to view the ride details and track</string>
+    <string name="send_data">Send Data</string>
+    <string name="edit_text_hint">Enter your name</string>
 </resources>
