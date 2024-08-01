@@ -18,9 +18,15 @@ class EndingActivity : AppCompatActivity() {
 
         userNameTv = findViewById(R.id.tvUserName)
 
-        val userName = intent.getStringExtra("USER_NAME")
-        val age = intent.getIntExtra("AGE", 0)
-        val isYoung = intent.getBooleanExtra("IS_YOUNG", false)
+        // intent approach
+//        val userName = intent.getStringExtra("USER_NAME")
+//        val age = intent.getIntExtra("AGE", 0)
+//        val isYoung = intent.getBooleanExtra("IS_YOUNG", false)
+
+        //bundle approach
+        val userName = intent.extras?.getString("USER_NAME")
+        val age = intent.extras?.getInt("AGE")
+        val isYoung = intent.extras?.getBoolean("IS_YOUNG")
 
         userNameTv.text = " UserName: $userName,\n"+
                 "Age: $age \n"+

@@ -38,11 +38,17 @@ class StartingActivity : AppCompatActivity() {
 //                putExtra("AGE", age.toString().toInt())
 //                putExtra("IS_YOUNG", true)
 //            }
-            startActivity(intent)
+
 
             /*
             bundle
              */
+            val bundle = Bundle()
+            bundle.putString("USER_NAME", username.toString())
+            bundle.putInt("AGE", age.toString().toInt())
+            bundle.putBoolean("IS_YOUNG", true)
+            intent.putExtras(bundle)
+            startActivity(intent)
         }
 
 
