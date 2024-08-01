@@ -4,6 +4,7 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
@@ -95,5 +96,32 @@ class FirstActivity : AppCompatActivity() {
             val intent = Intent(Intent.ACTION_VIEW, Uri.fromParts("sms",phone.toString(), null))
             startActivity(intent)
         }
+
+        Log.e("OnCreate:", "App has been created")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.e("onStart:", "App has just started")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.e("onResumse", "App has been resumed")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.e("onPause", "App has been paused")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.e("onStop", "App has Stopped")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.e("onDestroy", "App has destroyed")
     }
 }
