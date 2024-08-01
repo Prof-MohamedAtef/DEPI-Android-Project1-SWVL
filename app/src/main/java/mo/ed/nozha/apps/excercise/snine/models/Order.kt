@@ -1,4 +1,4 @@
-package mo.ed.nozha.apps.excercise.models
+package mo.ed.nozha.apps.excercise.snine.models
 
 import java.io.Serializable
 

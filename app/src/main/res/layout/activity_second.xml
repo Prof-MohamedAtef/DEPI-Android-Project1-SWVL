@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".excercise.intents.SecondActivity">
+    tools:context=".excercise.snine.intents.SecondActivity">
     <TextView
         android:id="@+id/tvName"
         app:layout_constraintStart_toStartOf="parent"

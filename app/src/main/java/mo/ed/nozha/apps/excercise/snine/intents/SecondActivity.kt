@@ -1,4 +1,4 @@
-package mo.ed.nozha.apps.excercise.intents
+package mo.ed.nozha.apps.excercise.snine.intents
 
 import android.os.Bundle
 import android.widget.TextView
@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import mo.ed.nozha.apps.R
-import mo.ed.nozha.apps.excercise.models.Order
+import mo.ed.nozha.apps.excercise.snine.models.Order
 
 class SecondActivity : AppCompatActivity() {
     lateinit var textViewName: TextView

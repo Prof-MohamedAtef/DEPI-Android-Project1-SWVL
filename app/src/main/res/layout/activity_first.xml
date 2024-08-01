@@ -6,7 +6,7 @@
     android:padding="@dimen/screen_padding"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".excercise.intents.FirstActivity">
+    tools:context=".excercise.snine.intents.FirstActivity">
     <ImageView
         android:id="@+id/map_launcher"
         android:layout_width="50dp"
