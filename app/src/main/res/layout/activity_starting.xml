@@ -54,5 +54,12 @@
         android:text="@string/send_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mapLauncher"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_map_launcher_custom"
+        app:layout_constraintTop_toBottomOf="@+id/ageEditText"
+        app:layout_constraintStart_toStartOf="@+id/ageEditText"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
