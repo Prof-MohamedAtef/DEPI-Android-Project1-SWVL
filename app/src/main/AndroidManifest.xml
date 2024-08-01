@@ -16,6 +16,9 @@
         android:theme="@style/Theme.MyNozhaApps"
         tools:targetApi="31">
         <activity
+            android:name=".excercise.intents.SecondActivity"
+            android:exported="false" />
+        <activity
             android:name=".excercise.intents.FirstActivity"
             android:exported="false" />
 
@@ -40,7 +43,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
