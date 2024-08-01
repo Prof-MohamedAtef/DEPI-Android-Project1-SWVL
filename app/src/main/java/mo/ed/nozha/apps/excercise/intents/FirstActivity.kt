@@ -1,5 +1,6 @@
 package mo.ed.nozha.apps.excercise.intents
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -8,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import mo.ed.nozha.apps.R
+
 /*
 Thursday, 1 August, 2024
  */
@@ -24,8 +26,12 @@ class FirstActivity : AppCompatActivity() {
         nameEditText = findViewById(R.id.editText)
         btnSendDate = findViewById(R.id.btnSendData)
 
-        btnSendDate.setOnClickListener { view->
+        btnSendDate.setOnClickListener { view ->
             var name = nameEditText.text
+
+            val nameIntent = Intent(this, SecondActivity::class.java)
+            nameIntent.putExtra("NAME_KEY", name)
+            startActivity(nameIntent)
 
         }
     }
