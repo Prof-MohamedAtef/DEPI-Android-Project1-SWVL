@@ -3,6 +3,7 @@ package mo.ed.nozha.apps.excercise.seight.intents
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
@@ -28,6 +29,10 @@ class StartingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
+        Log.e("ON_CREATE", "OnCreate call")
+
+
         setContentView(R.layout.activity_starting)
         nameEditText = findViewById(R.id.nameEditText)
         ageEditText = findViewById(R.id.ageEditText)
@@ -103,5 +108,31 @@ class StartingActivity : AppCompatActivity() {
             startActivity(phoneIntent)
         }
 
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.e("ON_START", "OnStart is called")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.e("ON_RESUME", "OnResume is called")
+    }
+
+
+    override fun onPause() {
+        super.onPause()
+        Log.e("ON_PAUSE", "OnPause is called")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.e("ON_STOP", "OnStop is called")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.e("ON_DESTROY", "OnDestroy is called")
     }
 }

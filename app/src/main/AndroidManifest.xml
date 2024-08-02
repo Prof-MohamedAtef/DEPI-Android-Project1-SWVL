@@ -16,27 +16,7 @@
         android:theme="@style/Theme.MyNozhaApps"
         tools:targetApi="31">
         <activity
-            android:name=".excercise.seight.intents.EndingActivity"
-            android:exported="false" />
-        <activity
-            android:name=".excercise.snine.intents.SecondActivity"
-            android:exported="false" />
-        <activity
-            android:name=".excercise.snine.intents.FirstActivity"
-            android:exported="true"></activity>
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
-
-        <activity
-            android:name=".features.location.view.location.LocationActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".TripInfoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TripDetails"
+            android:name=".excercise.seight.intents.TripBoardingActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,13 +24,35 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".features.tripboaring.view.activity.TripBoardingActivity"
-            android:exported="true">
+            android:name=".excercise.seight.intents.EndingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".excercise.snine.intents.SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".excercise.snine.intents.FirstActivity"
+            android:exported="true" />
 
-        </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".features.location.view.location.LocationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TripInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TripDetails"
+            android:exported="true"></activity>
+        <activity
+            android:name=".features.tripboaring.view.activity.TripBoardingActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".excercise.seight.intents.StartingActivity"
             android:exported="true">
+
         </activity>
     </application>
 
