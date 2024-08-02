@@ -9,4 +9,6 @@
     <string name="enter_your_name">Enter your name</string>
     <string name="enter_your_age">Enter your age</string>
     <string name="age_label">Age :</string>
+    <string name="trip_id">Trip Id</string>
+    <string name="departure_time">Departure Time:</string>
 </resources>
