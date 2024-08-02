@@ -39,16 +39,17 @@
             android:name=".TripDetails"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".excercise.seight.intents.StartingActivity"
+            android:name=".features.tripboaring.view.activity.TripBoardingActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".excercise.seight.intents.StartingActivity"
+            android:exported="true">
         </activity>
     </application>
 
