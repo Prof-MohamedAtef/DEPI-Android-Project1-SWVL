@@ -22,6 +22,7 @@ class StartingActivity : AppCompatActivity() {
     lateinit var ageEditText: EditText
     lateinit var mapLauncher: ConstraintLayout
     lateinit var callLauncher: ConstraintLayout
+    lateinit var smsLauncher: ConstraintLayout
     lateinit var friendEditPhone: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,6 +35,7 @@ class StartingActivity : AppCompatActivity() {
         mapLauncher = findViewById(R.id.mapLauncher)
         callLauncher = findViewById(R.id.callIntentLauncher)
         friendEditPhone = findViewById(R.id.friendEditPhone)
+        smsLauncher = findViewById(R.id.smsIntentLauncher)
 
 
         btnSendData.setOnClickListener { view->
@@ -91,6 +93,15 @@ class StartingActivity : AppCompatActivity() {
             startActivity(phoneIntent)
         }
 
+        /*
+        messaging implicit intent
+         */
+
+        smsLauncher.setOnClickListener { view->
+            val phone = friendEditPhone.text
+            val phoneIntent = Intent(Intent.ACTION_VIEW, Uri.fromParts("sms",phone.toString(), null))
+            startActivity(phoneIntent)
+        }
 
     }
 }

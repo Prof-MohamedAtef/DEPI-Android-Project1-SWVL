@@ -91,4 +91,24 @@
             android:layout_width="45dp"
             android:layout_height="45dp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/smsIntentLauncher"
+        app:layout_constraintTop_toBottomOf="@id/callIntentLauncher"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/sms_white_shape">
+        <ImageView
+            android:src="@drawable/ic_sms_messaging"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
