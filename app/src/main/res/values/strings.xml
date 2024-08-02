@@ -11,4 +11,7 @@
     <string name="age_label">Age :</string>
     <string name="trip_id">Trip Id</string>
     <string name="departure_time">Departure Time:</string>
+    <string name="edit">Edit</string>
+    <string name="search">Search</string>
+    <string name="remove">Remove</string>
 </resources>

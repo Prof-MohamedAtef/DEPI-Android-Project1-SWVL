@@ -6,4 +6,25 @@
     </style>
 
     <style name="Theme.MyNozhaApps" parent="Base.Theme.MyNozhaApps" />
+
+    <style name="AppActionBarTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+
+<!--    App Theme-->
+    <style name="MaterialCoBridgeTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">
+            ?android:attr/colorBackground
+        </item>
+    </style>
+
 </resources>
